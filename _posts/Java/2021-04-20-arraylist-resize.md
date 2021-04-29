@@ -4,7 +4,7 @@ title: ArrayList的扩容机制
 date: 2021-4-20
 categories: [Java]
 tags: [Jekyll, Github, Github Pages, Blog]
-excerpt: 通过源码来分析。
+excerpt: 通过源码来分析
 ---
 
 ### Arraylist成员变量
@@ -29,8 +29,6 @@ transient Object[] elementData;
 private int size;
 ```
 
-
-
 ### 3种new方式
 
 1.构造一个初始容量为10的空list
@@ -39,8 +37,6 @@ private int size;
 `public ArrayList(int initialCapacity)`
 3.通过传入集合数组构造一个带元素的list
 `public ArrayList(Collection<? extends E> c) `
-
-
 
 
 ### add()方法
