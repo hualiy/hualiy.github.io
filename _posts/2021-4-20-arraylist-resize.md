@@ -8,6 +8,7 @@ excerpt: 通过源码来分析。
 ---
 
 ### Arraylist成员变量
+
 ```
 //序列化ID
 private static final long serialVersionUID = 8683452581122892189L;
@@ -28,6 +29,8 @@ transient Object[] elementData;
 private int size;
 ```
 
+
+
 ### 3种new方式
 
 1.构造一个初始容量为10的空list
@@ -36,6 +39,8 @@ private int size;
 `public ArrayList(int initialCapacity)`
 3.通过传入集合数组构造一个带元素的list
 `public ArrayList(Collection<? extends E> c) `
+
+
 
 
 ### add()方法
@@ -49,12 +54,14 @@ public boolean add(E e) {
         return true;
     }
 ```
+
 minCapacity=size+1为当前数组要求的最小容量
 ```
 private void ensureCapacityInternal(int minCapacity) {
         ensureExplicitCapacity(calculateCapacity(elementData, minCapacity));
     }
 ```
+
 若elementData指向DEFAULTCAPACITY_EMPTY_ELEMENTDATA，说明是无参构造创建的，没有自定初始容量，取minCapacity与DEFAULT_CAPACITY最大值
 否则返回mincapacity
 ```
@@ -65,6 +72,7 @@ private void ensureCapacityInternal(int minCapacity) {
         return minCapacity;
     }
 ```
+
 modCount 是关于线程安全 minCapacity大于数组的长度则扩容
 ```
 private void ensureExplicitCapacity(int minCapacity) {
@@ -73,6 +81,7 @@ private void ensureExplicitCapacity(int minCapacity) {
             grow(minCapacity);
     }
 ```
+
 进行扩容，数组长度扩容为原来的1.5倍，若新数组容量比当前要求的最小容量还要小，则新数组容量newCapacity 为minCapacity；
 若比最大允许分配的数组长度还大，minCapacity说明内存溢出，三目运算符取其最大值为newCapacity
 最后将原来数组的元素拷入新数组，用elementData指向
