@@ -3,7 +3,7 @@ layout: post
 title: ArrayList的扩容机制
 date: 2021-4-20
 categories: [Java]
-tags: [Jekyll, Github, Github Pages, Blog]
+tags: [ArrayList,Java]
 excerpt: 通过源码来分析
 ---
 
