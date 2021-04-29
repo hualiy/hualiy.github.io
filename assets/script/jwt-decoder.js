@@ -1,6 +1,6 @@
 /**
  * JWT decoder
- * @author Chen Su <ghosind@gmail.com>
+ * @author Hwa Li <hwa.li@outlook.com>
  * @version 0.0.1
  */
 
