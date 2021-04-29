@@ -1,3 +1,12 @@
+---
+layout: post
+title: ArrayList的扩容机制
+date: 2021-4-20
+categories: [Java]
+tags: [Jekyll, Github, Github Pages, Blog]
+excerpt: 通过源码来分析。
+---
+
 ###Arraylist成员变量
 ```
 //序列化ID
