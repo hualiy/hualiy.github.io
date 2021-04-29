@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-29T12:46:26+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WoBo</title><subtitle>Personal study notes</subtitle><author><name>hwali</name></author><entry><title type="html">利用Github+Jekyll搭建个人博客</title><link href="http://localhost:4000/2018/03/02/create-jekyll-blog" rel="alternate" type="text/html" title="利用Github+Jekyll搭建个人博客" /><published>2018-03-02T00:00:00+08:00</published><updated>2018-03-02T00:00:00+08:00</updated><id>http://localhost:4000/2018/03/02/create-jekyll-blog</id><content type="html" xml:base="http://localhost:4000/2018/03/02/create-jekyll-blog">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;拥有一个个人博客基本上已经接近是开发者的标配之一了，在博客中记录自己的学习过程，分享自己的经验总结，也是促进自己技术成长的重要途径。当前有许多种创建个人博客的方式可以选择，如选择专业的博客网站提供的博客服务，国内有例如CSDN、博客园等，或是自己购买服务器搭建博客。在这里，也是推荐一种新的博客架设方式，也就是使用Github Pages服务搭建自己的博客。通过Jekyll在Github上搭建一个博客是一个很方便的选择，虽然其缺点是只能搭建静态的博客，但也能满足大多数的需求。&lt;/p&gt;
+
+&lt;h2 id=&quot;最简便的方式&quot;&gt;最简便的方式&lt;/h2&gt;
+
+&lt;p&gt;现在在Github上已经有着许多的Jekyll主题，若直接使用他人搭建好的主题只需fork对应的repo并修改名称即可。但在这里不介绍这种方式去搭建博客，而是选择在本地安装Jekyll进行搭建。&lt;/p&gt;
+
+&lt;h2 id=&quot;安装jekyll&quot;&gt;安装Jekyll&lt;/h2&gt;
+
+&lt;p&gt;首先，要在系统中安装RubyGems。RubyGems是一个Ruby的包管理器，类似于Ubuntu中的apt-get以及RedHat中的yum。在Ubuntu中可以使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;
+apt-get install gem&lt;/code&gt;命令安装RubyGems。安装完成后，需要通过RubyGems安装Jekyll和Bunlder。其中，Jekyll是我们需要的网站搭建程序，它是一个静态博客的生成程序。安装完成后只要通过&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new name&lt;/code&gt;命令即可创建一个新的博客站点。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;jekyll bundler
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;jekyll new blog
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;blog
+blog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这样就完成了Jekyll的安装，并使用最后一行的命令启动了服务器，默认情况下可以通过&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;进行访问。后续要再运行服务只需要进入博客的目录使用最后一行的命令启动即可，不需要再次进行安装。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/jekyll/0917bff3/blog.png&quot; alt=&quot;博客页面&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;目录结构&quot;&gt;目录结构&lt;/h2&gt;
+
+&lt;p&gt;默认情况下刚生成的博客目录下有以下目录和文件（从Jekyll 3.2开始，之前版本会生成更多的目录，各目录的含义如下文表中所述）。&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
+|- _posts
+|  |- 2018-03-02-welcome-to-jekyll.markdown
+|- .gitignore
+|- 404.html
+|- about.md
+|- _config.yml
+|- Gemfile
+|- Gemfile.lock
+|- index.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;其中，_posts文件夹存放要发布的博文，_config.yml是博客的配置文件。在默认情况下，特定的文件如文章、HTML文件等都需要存放在特定的目录下，各目录的名称及其含义如下表。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;目录名&lt;/td&gt;
+      &lt;td&gt;作用&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_data&lt;/td&gt;
+      &lt;td&gt;存放网站数据，通常为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.yml&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.yaml&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.json&lt;/code&gt;格式&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_drafts&lt;/td&gt;
+      &lt;td&gt;存放草稿&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_includes&lt;/td&gt;
+      &lt;td&gt;存放需要重用部分的布局&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_layouts&lt;/td&gt;
+      &lt;td&gt;存放模板&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_posts&lt;/td&gt;
+      &lt;td&gt;存放发布的文章&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_sass&lt;/td&gt;
+      &lt;td&gt;存放sass文件&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;_site&lt;/td&gt;
+      &lt;td&gt;默认存放运行时生成的页面&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;个性化修改&quot;&gt;个性化修改&lt;/h2&gt;
+
+&lt;p&gt;创建的Jekyll博客默认采用了minima主题，若要自定义修改博客的整体结构及样式，可在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;文件中移除&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;theme: minima&lt;/code&gt;。保存后还需对部分文件进行修改，并添加自定义的模板框架。具体关于自定义Jekyll的资料请查阅&lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;Jekyll Docs&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;上线&quot;&gt;上线&lt;/h2&gt;
+
+&lt;p&gt;在完成Jekyll的搭建后，登录Github，创建一个新的repo，名称为xxx.gihub.io，其中xxx为Github帐号的用户名。完成repo的创建后使用shell进入创建好的Jekyll目录，使用下列命令将目录初始化为git版本库并复制内容至本地。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;blog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
+blog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/xxx/xxx.github.io.git
+blog &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git pull origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;编辑.gitignore文件，将_site、.sass-cache及.jekyll-metadata加入到其中（生成博客的时候默认会生成，但可能会被git所覆盖，若覆盖只需重新编辑即可）。&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;_site
+.sass-cache
+.jekyll-metadata
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;完成后，使用git命令将要上传的文件上传至Github，即可通过xxx.github.io访问搭建好的博客了。&lt;/p&gt;
+
+&lt;h3 id=&quot;使用自定义域名&quot;&gt;使用自定义域名&lt;/h3&gt;
+
+&lt;p&gt;Github Pages支持自定义域名，使用的方法也很简单，只需在根目录中创建一个CNAME文件，写入自定义的域名地址即可。当然，不要忘记更改DNS的记录到Github Pages的IP地址。设置DNS只需添加一个A记录，指向&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;192.30.252.153&lt;/code&gt;或是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;192.30.252.154&lt;/code&gt;。注意，CNAME文件只支持单个域名，若需要多地址支持需要通过DNS进行设置。&lt;/p&gt;
+
+&lt;h2 id=&quot;广告&quot;&gt;广告&lt;/h2&gt;
+
+&lt;p&gt;前段时间修改了博客的界面后便顺便做了个版本供有兴趣的朋友使用，名为Jekyll Paper，且计划持续进行开发新的功能以及优化界面。Jekyll Paper在大方向上将会和我的博客同步进行更新，也欢迎大家加入开发。Jekyll Paper的项目地址是：&lt;a href=&quot;https://github.com/ghosind/Jekyll-Paper&quot;&gt;https://github.com/ghosind/Jekyll-Paper&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;参考资料&quot;&gt;参考资料&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>hwali</name></author><category term="Jekyll" /><category term="Jekyll" /><category term="Github" /><category term="Github Pages" /><category term="Blog" /><summary type="html">利用免费的Github Pages服务以及Jekyll搭建一个静态的个人博客。</summary></entry><entry><title type="html">Welcome to Jekyll Paper!</title><link href="http://localhost:4000/2018/02/11/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll Paper!" /><published>2018-02-11T00:00:00+08:00</published><updated>2018-09-20T00:00:00+08:00</updated><id>http://localhost:4000/2018/02/11/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2018/02/11/welcome-to-jekyll">&lt;p&gt;Jekyll Paper is a Jekyll theme, it is designed to helping you to create your own blog by the easiest way. Now, you can learn how to use this blog by this post.&lt;/p&gt;
+
+&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and reload the page to see your changes. You can edit this post on Github or your local repository copy.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.md&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// =&amp;gt; prints 'Hello World!' to STDOUT.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://github.com/ghosind/Jekyll-Paper/wiki&quot;&gt;Jekyll Paper docs&lt;/a&gt; or &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. If you have questions or suggestions, you can create an issue to asking them on &lt;a href=&quot;https://github.com/ghosind/Jekyll-Paper/issues&quot;&gt;Jekyll Paper Issues&lt;/a&gt; or &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>hwali</name></author><category term="Jekyll Paper" /><category term="Getting Start" /><summary type="html">Jekyll Paper is a Jekyll theme, it is designed to helping you to create your own blog by the easiest way. Now, you can learn how to use this blog by this post.</summary></entry></feed>

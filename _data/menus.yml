@@ -1,0 +1,11 @@
+- title: "Blog"
+  url: "/"
+  
+- title: "Categories"
+  url: "/categories"
+
+#- title: "Arichives"
+  #url: "/arichives"
+  
+- title: "About"
+  url: "/about"
