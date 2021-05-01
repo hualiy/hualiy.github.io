@@ -32,11 +32,17 @@ private int size;
 ### 3种new方式
 
 1.构造一个初始容量为10的空list
-`public ArrayList()`
+```java
+public ArrayList()
+```
 2.构造一个自定初始容量的空list
-`public ArrayList(int initialCapacity)`
+```java
+public ArrayList(int initialCapacity)
+```
 3.通过传入集合数组构造一个带元素的list
-`public ArrayList(Collection<? extends E> c) `
+```java
+public ArrayList(Collection<? extends E> c) 
+```
 
 
 ### add()方法
