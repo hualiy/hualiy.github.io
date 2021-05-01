@@ -9,7 +9,7 @@ excerpt: 通过源码来分析
 
 ### Arraylist成员变量
 
-```
+```java
 //序列化ID
 private static final long serialVersionUID = 8683452581122892189L;
 
