@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: HwaLi
 author: Hwa Li
-email: hwa.li@outlook.com
+email: hwa.li@hotmail.com
 description: Personal study notes
 keywords: [computer science, programming, hwali, blog]
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,7 +24,7 @@ url: "https://wobo.site" # the base hostname & protocol for your site, e.g. http
 github: hualiy
 
 comments: true
-disqus: ghosind
+disqus: hwali
 
 paginate: 25
 paginate_path: "/page:num/"
