@@ -5,7 +5,10 @@
  * base.scss
  * Author: Hwa Li <hwa.li@outlook.com>
  */
-
+pre,
+code {
+    background-color: #ccc;
+}
 @charset "utf-8";
 
 @import 'reset', 'wrapper', 'function', 'header', 'main', 'footer', 'page',
