@@ -42,8 +42,8 @@ public ArrayList(int initialCapacity)
 ```java
 public ArrayList(Collection<? extends E> c) 
 ```
-
 <br>  
+
 ### add()方法
 以add(E e)为例：
 在添加e到ArrayList之前，先检查容量
