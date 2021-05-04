@@ -179,5 +179,5 @@ export default new Router({
 npm run build
 ```
 
-打包成功后，当前项目目录下会生成一个 dist 文件夹，这个文件夹中有两个文件，分别是 index.html 和 static ，index.html 页面就是我们 SPA 项目中唯一的 HTML 页面了，static 中则保存了编译后的 js、css等文件，项目发布时，可以使用 nginx 独立部署 dist 中的静态文件，也可以将静态文件拷贝到 Spring Boot 项目的 static 目录下，然后对 Spring Boot 项目进行编译打包发布。
+打包成功后，当前项目目录下会生成一个 dist 文件夹，这个文件夹中有两个文件，分别是 index.html 和 static ，index.html 页面就是我们 SPA 项目中唯一的 HTML 页面了，static 中则保存了编译后的 js、css等文件，项目发布时，可以使用 nginx 独立部署 dist 中的静态文件，也可以将静态文件拷贝到 Spring Boot 项目的 static 目录下，然后对 Spring Boot 项目进行编译打包发布。<br/>
 [参考](http://www.javaboy.org/2019/0419/springboot-vue.html)
