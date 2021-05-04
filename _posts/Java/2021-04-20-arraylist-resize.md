@@ -27,7 +27,8 @@ transient Object[] elementData;
 //ArrayList 的 size （它包含的元素的个数）
 private int size;
 ```   
-<br>    
+<br> 
+
 ### 3种new方式
 1.构造一个初始容量为10的空list
 ```java
@@ -41,6 +42,7 @@ public ArrayList(int initialCapacity)
 ```java
 public ArrayList(Collection<? extends E> c) 
 ```
+
 <br>  
 ### add()方法
 以add(E e)为例：
