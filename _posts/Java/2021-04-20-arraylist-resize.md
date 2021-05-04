@@ -34,10 +34,12 @@ private int size;
 ```java
 public ArrayList()
 ```
+
 2. 构造一个自定初始容量的空list
 ```java
 public ArrayList(int initialCapacity)
 ```
+  
 3. 通过传入集合数组构造一个带元素的list
 ```java
 public ArrayList(Collection<? extends E> c) 
