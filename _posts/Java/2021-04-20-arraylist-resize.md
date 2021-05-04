@@ -31,8 +31,7 @@ private int size;
 ```
   
     
-      
-      
+<br><br>    
 ### 3种new方式
 
 1.构造一个初始容量为10的空list
@@ -40,7 +39,7 @@ private int size;
 public ArrayList()
 ```
   
-  
+ 
 2.构造一个自定初始容量的空list
 ```java
 public ArrayList(int initialCapacity)
@@ -53,7 +52,7 @@ public ArrayList(Collection<? extends E> c)
 ```
    
      
-     
+<br><br>  
 ### add()方法
 
 以add(E e)为例：
