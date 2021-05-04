@@ -34,7 +34,7 @@ private int size;
 ```java
 public ArrayList()
 ```
-2.构造一个自定初始容量的空list
+2. 构造一个自定初始容量的空list
 ```java
 public ArrayList(int initialCapacity)
 ```
