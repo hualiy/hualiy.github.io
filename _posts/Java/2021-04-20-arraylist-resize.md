@@ -30,7 +30,7 @@ private int size;
 <br> 
 
 ### 3种new方式
-1.构造一个初始容量为10的空list
+1. 构造一个初始容量为10的空list
 ```java
 public ArrayList()
 ```
@@ -38,7 +38,7 @@ public ArrayList()
 ```java
 public ArrayList(int initialCapacity)
 ```
-3.通过传入集合数组构造一个带元素的list
+3. 通过传入集合数组构造一个带元素的list
 ```java
 public ArrayList(Collection<? extends E> c) 
 ```
