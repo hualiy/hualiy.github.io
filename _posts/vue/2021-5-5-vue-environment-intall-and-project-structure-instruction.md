@@ -14,7 +14,7 @@ excerpt: vue环境安装和项目结构介绍
 1. NodeJS
 2. npm
 
-直接搜索下载 NodeJS 即可，安装成功之后，npm 也就有了。安装成功之后，可以 在 cmd 命令哈验证是否安装成功：
+直接搜索下载 NodeJS 即可，安装成功之后，npm 也就有了。安装成功之后，可以 在 cmd 命令中验证是否安装成功：
 
 ```bash
 D:\>node -v
@@ -180,4 +180,4 @@ npm run build
 ```
 
 打包成功后，当前项目目录下会生成一个 dist 文件夹，这个文件夹中有两个文件，分别是 index.html 和 static ，index.html 页面就是我们 SPA 项目中唯一的 HTML 页面了，static 中则保存了编译后的 js、css等文件，项目发布时，可以使用 nginx 独立部署 dist 中的静态文件，也可以将静态文件拷贝到 Spring Boot 项目的 static 目录下，然后对 Spring Boot 项目进行编译打包发布。<br/><br/>
-[copy](http://www.javaboy.org/2019/0419/springboot-vue.html)
+[copy from http://www.javaboy.org/](http://www.javaboy.org/2019/0419/springboot-vue.html)
