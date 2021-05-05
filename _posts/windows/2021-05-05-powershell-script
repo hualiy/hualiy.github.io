@@ -20,7 +20,9 @@ PowerShell默认的执行策略就是“Restricted”，禁止任何脚本的执
 ```bash
 PS D:\Projects> Get-ExecutionPolicy
 Restricted
-``` <br/>
+``` 
+
+<br/>
 
 使用【Set-ExecutionPolicy】命令设置/更改执行策略，选择“RemoteSigned”这个执行策略，这个策略既安全又可以执行本地编写的脚本.
 ```bash
