@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vue CLI 安装
+title: Vue CLI安装
 date: 2021-5-5
 categories: [Vue]
 tags: [Vue]
