@@ -9,8 +9,6 @@ excerpt: mybatis generator 逆向工程
 
 **pom.xml文件添加依赖和插件**
 
-<br/>
-
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
