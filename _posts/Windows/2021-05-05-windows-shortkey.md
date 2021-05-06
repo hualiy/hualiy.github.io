@@ -1,6 +1,6 @@
 ---
 layout: post
-title: windows 快捷键
+title: windows快捷键
 date: 2021-05-05
 categories: [windows]
 tags: [windows,shortkey]
