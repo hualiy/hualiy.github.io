@@ -7,7 +7,7 @@ tags: [mybatisgenerator]
 excerpt: mybatis generator 逆向工程
 ---
 
-**pom.xml文件添加依赖和插件**
+pom.xml文件添加依赖和插件
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,7 +68,7 @@ excerpt: mybatis generator 逆向工程
 
 <br/>
 
-**generatorConfig.xml**
+generatorConfig.xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
