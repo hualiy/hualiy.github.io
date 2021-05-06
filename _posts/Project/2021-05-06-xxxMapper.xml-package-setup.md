@@ -1,6 +1,6 @@
 ---
 layout: post
-title: xxxMapper.xml放在java包下打包被忽略  
+title: xxxMapper.xml 放在java包下打包被忽略  
 date: 2021-05-06
 categories: [project]
 tags: [xml]
