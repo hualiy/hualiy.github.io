@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mybatis generator
+title: mybatis generator 代码生成器
 date: 2021-05-06
 categories: [plugin]
 tags: [mybatisgenerator]
