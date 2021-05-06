@@ -3,6 +3,9 @@
   
 - title: "Categories"
   url: "/categories"
+  
+- title: "Archive"
+  url: "/archive"
 
 - title: "Link"
   url: "/link"
