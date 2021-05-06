@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ArrayList Resize
+title: ArrayList的扩容机制
 date: 2021-4-20
 categories: [Java]
 tags: [ArrayList,Java]
