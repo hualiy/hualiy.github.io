@@ -13,7 +13,8 @@ pom.xml文件添加依赖和插件
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.hwali</groupId>
@@ -79,7 +80,8 @@ generatorConfig.xml
 <generatorConfiguration>
     <!-- （1）配置mysql 驱动jar包路径.用了绝对路径 -->
        <!-- <classPathEntry location=
-                                "G:\0-maven\repository-BD\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar" />-->
+         "G:\0-maven\repository-BD\repository\mysql\mysql-connector-java\
+         5.1.38\mysql-connector-java-5.1.38.jar" />-->
 
     <context id="hwali_mysql_tables" targetRuntime="MyBatis3">
         <!-- 防止生成的代码中有很多注释，加入下面的配置控制 -->
