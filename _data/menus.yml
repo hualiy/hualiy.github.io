@@ -4,8 +4,8 @@
 - title: "Categories"
   url: "/categories"
 
-#- title: "Projects"
-#  url: "/projects"
+- title: "Link"
+  url: "/link"
   
 - title: "About"
   url: "/about"
