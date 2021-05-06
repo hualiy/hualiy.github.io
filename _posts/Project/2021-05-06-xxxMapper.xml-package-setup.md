@@ -9,11 +9,10 @@ excerpt: project configuration
 
 
 
-**xxxMapper.xml放在src/main/java 下不会被打包,pom.xml中配置一下**
+**xxxMapper.xml放在src/main/java 下不会被打包,pom.xml中添加配置**
 
 ```xml
 <build>
-        <!--  xml写在包下面默认会过滤掉,配置一下.将包下的xml打包      -->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
