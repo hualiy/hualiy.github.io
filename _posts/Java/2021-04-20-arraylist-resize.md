@@ -18,7 +18,8 @@ private static final int DEFAULT_CAPACITY = 10;
 //共用的空数组实例对象被用作空实例
 private static final Object[] EMPTY_ELEMENTDATA = {};
 
-//共用的空数组实例对象被用作默认size的空实例，与EMPTY_ELEMENTDATA 的区别是第一个元素被添加会知道扩容到10
+//共用的空数组实例对象被用作默认size的空实例，与EMPTY_ELEMENTDATA 的区别
+//是第一个元素被添加会知道扩容到10
 private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
 
 //数组元素被存储在数组缓存。ArrayList的容量是array buffer 的长度。
