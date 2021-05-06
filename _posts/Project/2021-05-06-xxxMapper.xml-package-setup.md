@@ -9,7 +9,7 @@ excerpt: project configuration
 
 
 
-**xxxMapper.xml放在src/main/java 下不会被打包,pom.xml中添加配置**
+xxxMapper.xml放在src/main/java 下不会被打包,pom.xml中添加配置
 
 ```xml
 <build>
