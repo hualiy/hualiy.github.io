@@ -26,16 +26,16 @@ public String getPassword() {
 
 ```java
 @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        		http.  
-                ......
-                .successHandler(new AuthenticationSuccessHandler() {
-                    @Override
-                    public void onAuthenticationSuccess(HttpServletRequest req, HttpServletResponse resp, Authentication auth) throws IOException, ServletException {
-                        ......
-                        Xx xx = (Xx) auth.getPrincipal().setPassword(null);
-                        ......
-                    }
-                })
+protected void configure(HttpSecurity http) throws Exception {
+    http.  
+    ......
+         .successHandler(new AuthenticationSuccessHandler() {
+              @Override
+              public void onAuthenticationSuccess(HttpServletRequest req, HttpServletResponse resp, Authentication auth) throws IOException, ServletException {
+                  ......
+                  Xx xx = (Xx) auth.getPrincipal().setPassword(null);
+                  ......
+               }
+ })
 ```
 
