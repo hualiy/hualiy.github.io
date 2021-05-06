@@ -33,8 +33,8 @@ protected void configure(HttpSecurity http) throws Exception {
          .successHandler(new AuthenticationSuccessHandler() {
               @Override
               public void onAuthenticationSuccess(HttpServletRequest req, 
-              HttpServletResponse resp,Authentication auth) 
-              throws IOException, ServletException {
+                  HttpServletResponse resp,Authentication auth) 
+                  throws IOException, ServletException {
                   ......
                   Xx xx = (Xx) auth.getPrincipal().setPassword(null);
                   ......
