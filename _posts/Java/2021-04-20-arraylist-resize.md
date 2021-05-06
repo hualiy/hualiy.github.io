@@ -7,7 +7,7 @@ tags: [ArrayList,Java]
 excerpt: 通过源码来分析
 ---
 
-### Arraylist成员变量 
+# Arraylist成员变量 
 ```java
 //序列化ID
 private static final long serialVersionUID = 8683452581122892189L;
@@ -30,7 +30,7 @@ private int size;
 ```   
 <br> 
 
-### 3种new方式
+# 3种new方式
 1. 构造一个初始容量为10的空list
 ```java
 public ArrayList()
@@ -47,7 +47,7 @@ public ArrayList(Collection<? extends E> c)
 ```
 <br>  
 
-### add()方法
+# add()方法
 以add(E e)为例：
 在添加e到ArrayList之前，先检查容量
 ```java
