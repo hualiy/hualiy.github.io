@@ -23,7 +23,7 @@ url: "https://wobo.site" # the base hostname & protocol for your site, e.g. http
 
 github: hualiy
 
-comments: true
+comments: false
 disqus: hwali
 
 paginate: 25
@@ -31,7 +31,7 @@ paginate_path: "/page:num/"
 
 permalink: /:year/:month/:day/:title
 
-google_analytics: UA-87927057-1
+google_analytics: ''
 
 sass:
   sass_dir: _sass
