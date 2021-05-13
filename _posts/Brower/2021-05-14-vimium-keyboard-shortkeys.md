@@ -11,7 +11,7 @@ excerpt: Keyboard shortcuts
 |H	|	Go back in history|
 |L	|	Go forward in history|
 |
-|key| key |Manipulating tabs    |                  |
+|key|Manipulating tabs    |                  |
 |
 |K, gt	|	Go one tab right|
 |J, gT	|	Go one tab left|
@@ -33,12 +33,12 @@ excerpt: Keyboard shortcuts
 |f	|	Open a link in the current tab|
 |F	|	Open a link in a new tab|
 |o	|	Open URL, bookmark, or history entry|
-O	:	Open URL, bookmark, or history entry in a new tab
-  r	:	Reload the page
-gs	:	View page source
-/	:	Enter find mode
-n	:	Cycle forward to the next find match
-N	:	Cycle backward to the previous find match
-yy	:	Copy the current URL to the clipboard
-gf	:	Cycle focus to the next frame
-i	:	Enter insert mode
+|O	:	Open URL, bookmark, or history entry in a new tab|
+|  r	:	Reload the page|
+|gs	|	View page source|
+|/	|	Enter find mode|
+|n	|	Cycle forward to the next find match|
+|N	|	Cycle backward to the previous find match||
+|yy	|	Copy the current URL to the clipboard|
+|gf	|	Cycle focus to the next frame|
+|i	|	Enter insert mode|
