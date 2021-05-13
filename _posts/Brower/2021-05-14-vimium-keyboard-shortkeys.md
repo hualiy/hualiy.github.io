@@ -7,21 +7,15 @@ tags: [brower,vimium,shortkeys]
 excerpt: Vimium Keyboard shortcuts
 ---
 
-| key  | Navigating history                             |
+| key  | Instroduction                                  |
 | :--- | :--------------------------------------------  |
 |H     |	Go back in history                            | 
 |L	   |	Go forward in history                         |   
-
-|key| Manipulating tabs                              |  
-| :---| :--------------------------------------------- |
-|K, gt|	Go one tab right                              |
-|J, gT|	Go one tab left                               |
-|t	  |	Create new tab                                |
-|x	  |	Close current tab                             |
-|X	  |	Restore closed tab                            |
-
-|key	 | Navigating the page                            |
-| :--- | :--------------------------------------------- |
+|K, gt |	Go one tab right                              |
+|J, gT |	Go one tab left                               |
+|t	   |	Create new tab                                |
+|x	   |	Close current tab                             |
+|X	   |	Restore closed tab                            |
 |?	   |	Show the help dialog                          |
 |j	   |	Scroll down                                   |
 |k	   |	Scroll up                                     |
