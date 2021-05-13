@@ -10,7 +10,6 @@ excerpt: Keyboard shortcuts
 | :--- | :--------------------------------------------- |
 |H	|	Go back in history|
 |L	|	Go forward in history|
-|
 |key|Manipulating tabs    |         
 |
 |K, gt	|	Go one tab right|
