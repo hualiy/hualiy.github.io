@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard shortcuts
+title: Vimium Keyboard shortcuts
 date: 2021-05-14
 categories: [brower]
 tags: [brower,vimium,shortkeys]
