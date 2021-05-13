@@ -13,7 +13,7 @@ excerpt: Vimium Keyboard shortcuts
 |L	   |	Go forward in history                         |   
 
 |key| Manipulating tabs                              |  
-| :--| :--------------------------------------------- |
+| :---| :--------------------------------------------- |
 |K, gt|	Go one tab right                              |
 |J, gT|	Go one tab left                               |
 |t	  |	Create new tab                                |
