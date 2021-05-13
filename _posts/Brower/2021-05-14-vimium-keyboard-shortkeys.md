@@ -10,13 +10,15 @@ excerpt: Keyboard shortcuts
 | :--- | :--------------------------------------------- |
 |H	|	Go back in history|
 |L	|	Go forward in history|
-|key|Manipulating tabs    |         
+|key|Manipulating tabs    |  
+| :--- | :--------------------------------------------- |
 |K, gt	|	Go one tab right|
 |J, gT	|	Go one tab left|
 |t	|	Create new tab|
 |x	|	Close current tab|
 |X	|	Restore closed tab|
 |key	|Navigating the page|
+| :--- | :--------------------------------------------- |
 |?	|	Show the help dialog|
 |j	|	Scroll down|
 |k	|	Scroll up|
