@@ -4,12 +4,13 @@ title: Keyboard shortcuts
 date: 2021-05-14
 categories: [brower]
 tags: [brower,vimium,shortkeys]
-excerpt: Keyboard shortcuts
+excerpt: Vimium Keyboard shortcuts
 ---
 | key | Navigating history                        |
 | :--- | :--------------------------------------------- |
 |H	|	Go back in history|
 |L	|	Go forward in history|
+
 |key|Manipulating tabs    |  
 | :--- | :--------------------------------------------- |
 |K, gt	|	Go one tab right|
@@ -17,6 +18,7 @@ excerpt: Keyboard shortcuts
 |t	|	Create new tab|
 |x	|	Close current tab|
 |X	|	Restore closed tab|
+
 |key	|Navigating the page|
 | :--- | :--------------------------------------------- |
 |?	|	Show the help dialog|
