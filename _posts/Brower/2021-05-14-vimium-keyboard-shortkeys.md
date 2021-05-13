@@ -8,9 +8,8 @@ excerpt: Vimium Keyboard shortcuts
 ---
 | key   | Navigating history                            |
 | :---  | :-------------------------------------------- |
-|H	    |	Go back in history|
+|H      |	Go back in history|
 |L	    |	Go forward in history                             |
-
 |key    | Manipulating tabs                             |  
 | :---  | :---------------------------------------------|
 |K, gt	|	Go one tab right                              |
@@ -18,7 +17,6 @@ excerpt: Vimium Keyboard shortcuts
 |t	    |	Create new tab|
 |x	    |	Close current tab                             |
 |X	    |	Restore closed tab                            |
-
 |key	 | Navigating the page                            |
 | :--- | :--------------------------------------------- |
 |?	   |	Show the help dialog                          |
