@@ -25,11 +25,11 @@ application.yml
 ```yaml
 aliyun:
   oss:
-    access-key-id: LTAI4GK4qrb1vNRdyD6hzLnE
-    access-key-secret: Kf4JeiwVsIErzO9kAxH9OAM0wDXwJZ
-    bucket-domain: http://hual.oss-cn-shanghai.aliyuncs.com
+    access-key-id: 
+    access-key-secret: 
+    bucket-domain: 
     bucket-name: hual
-    end-point: http://oss-cn-shanghai.aliyuncs.com
+    end-point: 
 ```
 
 
