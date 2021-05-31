@@ -2,7 +2,7 @@
 layout: post
 title: Aliyun OSS
 date: 2021-05-19
-categories: [Java,UpLoad]
+categories: [UpLoad]
 tags: [OSS,Java,Upload]
 excerpt: Aliyun OSS
 ---
