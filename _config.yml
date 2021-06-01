@@ -17,7 +17,7 @@ title: NOTE
 author: Hwa Li
 email: hwa.li@outlook.com
 description: 
-tags: [computer science, programming, hwali, blog]
+keywords: [computer science, programming, hwali, blog]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wobo.site" # the base hostname & protocol for your site, e.g. http://example.com
 
