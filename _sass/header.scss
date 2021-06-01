@@ -38,3 +38,18 @@
   float: left;
   margin: 0 10px;
 }
+
+#fork-me {
+  @media (max-width: 1250px) {
+    display: none;
+  }
+  
+   img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    width: ~"calc((100% - 1050px)/2)";
+    max-width: 149px;
+  }
+}
