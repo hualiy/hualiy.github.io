@@ -2,7 +2,8 @@
   <span class="header-info-name">{{ site.title }}</span>
   <span class="header-info-desc">{{ site.description }}</span>
 </div>
-<nav class="header-nav">
+<div>
+  <nav class="header-nav">
   <ul class="header-main-nav">
     {% for item in site.data.menus %}
     <li class="header-main-nav-item">
@@ -14,7 +15,9 @@
     {% endfor %}
   </ul>
 </nav>
-  <!-- fork me on github -->
+</div>
+<div>
+    <!-- fork me on github -->
   <a id="fork-me" href="https://github.com/{{ site.github }}"  target="_blank"><img src="{{ site.static_url }}/forkme.png" alt="Fork me on GitHub"></a>
-
+</div>
 
