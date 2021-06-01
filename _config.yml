@@ -22,6 +22,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wobo.site" # the base hostname & protocol for your site, e.g. http://example.com
 
 github: hualiy
+#github source
+static_url: "/assets/images"
 
 comments: false
 disqus: hwali
